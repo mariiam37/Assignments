@@ -45,7 +45,7 @@ namespace Assignments
         }
         public static class BookingHelper
         {
-            public static int BookingCounter = 0;
+            private static int BookingCounter = 0;
             public static double CalcGroupDiscount(int numberOfTickets, double pricePerTicket)
             {
                 double total = numberOfTickets * pricePerTicket;
@@ -67,7 +67,7 @@ namespace Assignments
             private TicketType _type;
             private Seat _seat;
             private decimal _price;
-            public static int TicketCounter = 0;
+            private static int TicketCounter = 0;
             private int _ticketID;
             
             //MovieName Property
@@ -114,10 +114,10 @@ namespace Assignments
             //full constructor
             public Ticket(string movieName, TicketType type, Seat seat, decimal price)
             {
-                _movieName = movieName;
-                _type = type;
-                _seat = seat;
-                _price = price;
+                MovieName = movieName;
+                Type = type;
+                Seat = seat;
+                Price = price;
             }
 
             // constructor with movie name and price : chains to the full constructor
