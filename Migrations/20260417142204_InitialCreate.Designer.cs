@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Assignments.Migrations
 {
-    [DbContext(typeof(BookStoreContext))]
+    [DbContext(typeof(Assignments.AppDbContext))]
     [Migration("20260417142204_InitialCreate")]
     partial class InitialCreate
     {
